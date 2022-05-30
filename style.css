@@ -140,7 +140,7 @@ button {
 }
 
 /* Completed */
-.section__label {
+.section__label_completed {
   text-decoration: line-through;
   color: #888;
 }
