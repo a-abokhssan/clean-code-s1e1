@@ -4,46 +4,59 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__img {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+  .header {
+    text-align: center;
+  }
 }
-}
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task-wrapper {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .section__wrapper {
   display: flex;
 }
+
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
-li, h3 {
-  list-style:none;
+
+li,
+h3 {
+  list-style: none;
 }
-input,button{
-  outline:none;
+
+input,
+button {
+  outline: none;
 }
+
 .section__btn {
   background: none;
   border: 0px;
@@ -53,9 +66,11 @@ input,button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .section__btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .section__title {
   display: block;
@@ -67,6 +82,7 @@ input,button{
   margin: 0 0 20px;
   text-transform: uppercase;
 }
+
 .section__task-new {
   margin: 0;
   font-size: 18px;
@@ -79,6 +95,7 @@ input,button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .section__task-new:focus {
   color: #333;
 }
@@ -92,47 +109,52 @@ input,button{
   justify-content: space-between;
   align-items: center;
 }
-.section__item > * {
+
+.section__item>* {
   vertical-align: middle;
 }
 
 .section__item_input-checkbox {
   margin: 0 10px;
 }
+
 .section__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .section__item_input-text {
   width: 226px
 }
+
 .section__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .section__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 .section__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .section__item_input-text {
-  display:none
+  display: none
 }
 
 .section__item_edit-mode .section__item_input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .section__item_edit-mode .section__label {
-  display:none;
+  display: none;
 }
