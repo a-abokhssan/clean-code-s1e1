@@ -103,6 +103,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
+    editInput.classList.toggle("section__task-new")
     listItem.classList.toggle("section__item_edit-mode");
 };
 
